@@ -4,36 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Trivia Game</title>
+    <title>Totally Trivial Trivia!</title>
 </head>
 
 <body>
     
-<div id="title"><h1>Trivia Game</h1></div>
+<div id="title"><h1>Totally Trivial Trivia!</h1></div>
 
-<div id="instructions"></div>
+<!-- time remaining goes here -->
+<div id="timer">Time Remaining: </div>
 
-<div id ="goalScore">Goal Score: </div>
-
-<div id="winloss">
-    <div id="wins">Wins: 0</div>
-    <div id="losses">Losses: 0</div>
+<!-- trivia questions go below here -->
+<div id ="question1">What was the first full length CGI movie?
+    <label><input type="radio" name="cgiMovie" value="Toy Story">Toy Story</label>
+    <label><input type="radio" name="cgiMovie" value="A Bug's Life">A Bug's Life</label>
+    <label><input type="radio" name="cgiMovie" value="The Lion King">The Lion King</label>
+    <label><input type="radio" name="cgiMovie" value="Monster's Inc.">Monster's Inc.</label>
 </div>
 
-<div id="crystalsContainer">Crystals
-    <div id="redCrystal"><img src="" alt="redCrystal"></div>
-    <div id="blueCrystal"><img src="" alt="blueCrystal"></div>
-    <div id="yellowCrystal"><img src="" alt="yellowCrystal"></div>
-    <div id="greenCrystal"><img src="" alt="greenCrystal"></div>
-</div>
 
+<div id="question2">Which of these is NOT a name of one of the Spice Girls?</div>
+    <label><input type="radio" name="spiceGirls" value="Athletic Spice">Athletic Spice</label>
+    <label><input type="radio" name="spiceGirls" value="Scary Spice">Scary Spice</label>
+    <label><input type="radio" name="spiceGirls" value="Posh Spice">Posh Spice</label>
+    <label><input type="radio" name="spiceGirls" value="Sporty Spice">Sporty Spice</label>
+
+<div id="question3">Which NBA team won the most titles in the 90s?</div>
+    <label><input type="radio" name="nbaTeam" value="Chicago Bulls">Chicago Bulls</label>
+    <label><input type="radio" name="nbaTeam" value="Boston Celtics">Boston Celtics</label>
+    <label><input type="radio" name="nbaTeam" value="Los Angeles Lakers">Los Angeles Lakers</label>
+    <label><input type="radio" name="nbaTeam" value="Golden State Warriors">Golden State Warriors</label>
 
 <div id="totalScore">Your Total Score is: </div>
-
-<div id="totalScoreNum">Total Score Number</div>
-
 
 
 
