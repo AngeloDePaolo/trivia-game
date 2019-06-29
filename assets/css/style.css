@@ -1,0 +1,4 @@
+#game {
+    /* display: none; could also work but the difference is the space that this element would occupy does not show up wheras with visbility: hidden; it Would show that empty placeholder space- */
+    visibility: hidden;
+}

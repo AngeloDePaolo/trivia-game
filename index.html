@@ -12,11 +12,19 @@
     
 <div id="title"><h1>Totally Trivial Trivia!</h1></div>
 
+<div>
+    <button id="start">Let's Begin</button>
+</div>
+
 <!-- time remaining goes here -->
 <div id="timer">Time Remaining: </div>
 
 <!-- trivia questions go below here -->
-<div id ="question1">What was the first full length CGI movie?
+<img id="landingImage" src="../trivia-game/assets/images/Trivia-Questions-Only-Geniuses-Will-Get-Right-FT-1.jpg" alt="let's play">
+
+<div id="game">
+<div id ="question1">
+    What was the first full length CGI movie?
     <label><input type="radio" name="cgiMovie" value="Toy Story">Toy Story</label>
     <label><input type="radio" name="cgiMovie" value="A Bug's Life">A Bug's Life</label>
     <label><input type="radio" name="cgiMovie" value="The Lion King">The Lion King</label>
@@ -24,18 +32,25 @@
 </div>
 
 
-<div id="question2">Which of these is NOT a name of one of the Spice Girls?</div>
+<div id="question2">Which of these is NOT a name of one of the Spice Girls?
     <label><input type="radio" name="spiceGirls" value="Athletic Spice">Athletic Spice</label>
     <label><input type="radio" name="spiceGirls" value="Scary Spice">Scary Spice</label>
     <label><input type="radio" name="spiceGirls" value="Posh Spice">Posh Spice</label>
     <label><input type="radio" name="spiceGirls" value="Sporty Spice">Sporty Spice</label>
+</div>
 
-<div id="question3">Which NBA team won the most titles in the 90s?</div>
+<div id="question3">Which NBA team won the most titles in the 90s?
     <label><input type="radio" name="nbaTeam" value="Chicago Bulls">Chicago Bulls</label>
     <label><input type="radio" name="nbaTeam" value="Boston Celtics">Boston Celtics</label>
     <label><input type="radio" name="nbaTeam" value="Los Angeles Lakers">Los Angeles Lakers</label>
     <label><input type="radio" name="nbaTeam" value="Golden State Warriors">Golden State Warriors</label>
+</div>
+</div>
 
+
+<div>
+    <button id="submit">Submit</button>
+</div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script type="text/javascript" src="./assets/javascript/app.js"></script>
