@@ -1,4 +1,65 @@
-#game {
-    /* display: none; could also work but the difference is the space that this element would occupy does not show up wheras with visbility: hidden; it Would show that empty placeholder space- */
-    visibility: hidden;
+body {
+    background-image: url(../images/background.png);
 }
+
+#game {
+    visibility: hidden;
+    margin: auto;
+    width: 50%;
+    text-align: left;
+    font-family: 'Saira Stencil One', cursive;
+    font-size: 17px;
+    color: white;
+    text-shadow: 1px 1px black;
+    white-space:nowrap;
+}
+    /* display: none; could also work but the difference is the space that this element would occupy does not show up wheras with visbility: hidden; it Would show that empty placeholder space- */
+
+#title {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    font-family: 'Saira Stencil One', cursive;
+    font-size: 24px;
+    color: turquoise;
+    text-shadow: 1.5px 1.5px purple;
+}
+
+#startButton {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+#timeLeft {
+    margin: auto;
+    width: 50%;
+    color: red;
+    text-align: center;
+}
+
+#landingImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#questions {
+    font-family: 'Saira Stencil One', cursive;
+    font-size: 20px;
+    color: turquoise;
+    text-shadow: 1.5px 1.5px purple;
+}
+
+#submitButton {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+button {
+    border-radius: 25px;
+    font-weight: bold;
+}
+

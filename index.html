@@ -1,59 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Totally Trivial Trivia!</title>
 </head>
 
 <body>
-    
-<div id="title"><h1>Totally Trivial Trivia!</h1></div>
 
-<div>
-    <button id="start">Let's Begin</button>
-</div>
+    <!-- main title of game page -->
+    <div id="title">
+        <h1>Totally Trivial Trivia!</h1>
+    </div>
 
-<!-- time remaining goes here -->
-<div id="timer">Time Remaining: </div>
+    <!-- button to press for beginning a round of the game, start 60 second timer -->
+    <div id="startButton">
+        <button id="startBtn">Let's Begin</button>
+    </div>
+    <br>
 
-<!-- trivia questions go below here -->
-<img id="landingImage" src="../trivia-game/assets/images/Trivia-Questions-Only-Geniuses-Will-Get-Right-FT-1.jpg" alt="let's play">
+    <!-- time remaining goes here -->
+    <div id="timeLeft">Time Remaining: </div>
+    <br>
 
-<div id="game">
-<div id ="question1">
-    What was the first full length CGI movie?
-    <label><input type="radio" name="cgiMovie" value="Toy Story">Toy Story</label>
-    <label><input type="radio" name="cgiMovie" value="A Bug's Life">A Bug's Life</label>
-    <label><input type="radio" name="cgiMovie" value="The Lion King">The Lion King</label>
-    <label><input type="radio" name="cgiMovie" value="Monster's Inc.">Monster's Inc.</label>
-</div>
+    <!-- trivia questions go below here -->
+    <img id="landingImage" src="../trivia-game/assets/images/splashImage.png" alt="let's play">
 
+    <div id="game">
+        <div id="questions">What was the first full-length CGI movie?</div>
+        <label><input type="radio" name="cgiMovie" value="Toy Story">Toy Story</label>
+        <label><input type="radio" name="cgiMovie" value="A Bug's Life">A Bug's Life</label>
+        <label><input type="radio" name="cgiMovie" value="The Lion King">The Lion King</label>
+        <label><input type="radio" name="cgiMovie" value="Monster's Inc.">Monster's Inc.</label>
+        <br>
+        <br>
+        <div id="questions">Which of these is NOT a name of one of the Spice Girls?</div>
+        <label><input type="radio" name="spiceGirls" value="Athletic Spice">Athletic Spice</label>
+        <label><input type="radio" name="spiceGirls" value="Scary Spice">Scary Spice</label>
+        <label><input type="radio" name="spiceGirls" value="Posh Spice">Posh Spice</label>
+        <label><input type="radio" name="spiceGirls" value="Sporty Spice">Sporty Spice</label>
+        <br>
+        <br>
+        <div id="questions">Which NBA team won the most titles in the 90s?</div>
+        <label><input type="radio" name="nbaTeam" value="Chicago Bulls">Chicago Bulls</label>
+        <label><input type="radio" name="nbaTeam" value="Boston Celtics">Boston Celtics</label>
+        <label><input type="radio" name="nbaTeam" value="Los Angeles Lakers">Los Angeles Lakers</label>
+        <label><input type="radio" name="nbaTeam" value="Golden State Warriors">Golden State Warriors</label>
+        <br>
+        <br>
+        <div id="questions">What is the third sign of the Zodiac?</div>
+        <label><input type="radio" name="zodiacSign" value="Cancer">Cancer</label>
+        <label><input type="radio" name="zodiacSign" value="Scorpio">Scorpio</label>
+        <label><input type="radio" name="zodiacSign" value="Gemini">Gemini</label>
+        <label><input type="radio" name="zodiacSign" value="Pisces">Pisces</label>
+        <br>
+        <br>
+        <div id="questions">What is the largest two digit prime number?</div>
+        <label><input type="radio" name="primeNumber" value="53">53</label>
+        <label><input type="radio" name="primeNumber" value="97">97</label>
+        <label><input type="radio" name="primeNumber" value="11">11</label>
+        <label><input type="radio" name="primeNumber" value="79">79</label>
+        <br>
+        <br>
+        <div id="questions">Which U.S. president served the shortest time in office?</div>
+        <label><input type="radio" name="usPrez" value="John F. Kennedy">John F. Kennedy</label>
+        <label><input type="radio" name="usPrez" value="James A. Garfield">James A. Garfield</label>
+        <label><input type="radio" name="usPrez" value="William Henry Harrison">William Henry Harrison</label>
+        <label><input type="radio" name="usPrez" value="Zachary Taylor">Zachary Taylor</label>
+    </div>
 
-<div id="question2">Which of these is NOT a name of one of the Spice Girls?
-    <label><input type="radio" name="spiceGirls" value="Athletic Spice">Athletic Spice</label>
-    <label><input type="radio" name="spiceGirls" value="Scary Spice">Scary Spice</label>
-    <label><input type="radio" name="spiceGirls" value="Posh Spice">Posh Spice</label>
-    <label><input type="radio" name="spiceGirls" value="Sporty Spice">Sporty Spice</label>
-</div>
+    <br>
 
-<div id="question3">Which NBA team won the most titles in the 90s?
-    <label><input type="radio" name="nbaTeam" value="Chicago Bulls">Chicago Bulls</label>
-    <label><input type="radio" name="nbaTeam" value="Boston Celtics">Boston Celtics</label>
-    <label><input type="radio" name="nbaTeam" value="Los Angeles Lakers">Los Angeles Lakers</label>
-    <label><input type="radio" name="nbaTeam" value="Golden State Warriors">Golden State Warriors</label>
-</div>
-</div>
+    <div id="submitButton">
+        <button id="submit">Submit</button>
+    </div>
 
-
-<div>
-    <button id="submit">Submit</button>
-</div>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script type="text/javascript" src="./assets/javascript/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/javascript/app.js"></script>
 
 </body>
+
 </html>
